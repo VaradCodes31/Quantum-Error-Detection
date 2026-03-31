@@ -1,0 +1,30 @@
+# Environments
+venv/
+.env
+.venv
+env/
+venv.bak/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large results and models
+results/
+*.joblib
+*.pkl
+*.png
+
+# Data (Optional: if the user wants to keep data local)
+# data/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

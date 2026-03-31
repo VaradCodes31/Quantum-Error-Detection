@@ -1,0 +1,18 @@
+Quantum Error Detection - Improved Results
+========================================
+Random Forest: 0.5805
+SVM: 0.5650
+ResNet DL: 0.6020
+Gated Attention: 0.5880
+
+Detailed Report (ResNet DL):
+              precision    recall  f1-score   support
+
+    bit_flip       0.67      0.62      0.64       492
+depolarizing       0.64      0.58      0.61       513
+  phase_flip       0.56      0.56      0.56       498
+     readout       0.56      0.65      0.60       497
+
+    accuracy                           0.60      2000
+   macro avg       0.61      0.60      0.60      2000
+weighted avg       0.61      0.60      0.60      2000
