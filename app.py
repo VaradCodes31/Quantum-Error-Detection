@@ -41,7 +41,7 @@ ensemble, scaler, encoder, feature_names, benchmarks = load_artifacts()
 
 # --- NEW LARGE BENCHMARKING SECTION ---
 if benchmarks:
-    with st.expander("📊 Model Performance Benchmarks (Global Tuning)", expanded=True):
+    with st.expander(" Model Performance Benchmarks (Global Tuning)", expanded=True):
         bench_df = pd.DataFrame(list(benchmarks.items()), columns=['Model', 'Accuracy'])
         bench_df = bench_df.sort_values(by='Accuracy', ascending=False)
         
@@ -69,7 +69,7 @@ if benchmarks:
 
         # --- ADDED CONFUSION MATRIX ---
         st.markdown("---")
-        st.subheader("🎯 Global Confusion Matrix (normalized)")
+        st.subheader(" Global Confusion Matrix (normalized)")
         if os.path.exists('results/confusion_matrix.png'):
             st.image('results/confusion_matrix.png', use_container_width=True, 
                      caption="Normalized Confusion Matrix on Test Set")
@@ -164,7 +164,7 @@ if ensemble:
             
             try:
                 # 1. Dynamic + Physical Logic Breakdown
-                st.markdown("#### 🤔 Logic Breakdown")
+                st.markdown("####  Logic Breakdown")
                 
                 # Extract key values for logic text
                 gc_val = input_df['gate_count'].values[0]
